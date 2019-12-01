@@ -5,3 +5,14 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+require 'faker'
+include Faker
+100.times do
+artists = Artist.create(
+    name: Faker::Food.sushi
+  )
+
+
+end
+
+puts "data is seeded"
